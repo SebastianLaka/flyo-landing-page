@@ -3,3 +3,9 @@
 @use "./font" as *;
 @use "./mixins" as *;
 
+.a{
+    font-family: "Open-Sans", sans-serif;
+}
+.b{
+    font-family: "Raleway", sans-serif;
+}
