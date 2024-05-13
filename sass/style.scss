@@ -1,4 +1,5 @@
 @use "./reset" as *;
-body{
-    background-color: red;
-}
+@use "./colors" as *;
+@use "./font" as *;
+@use "./mixins" as *;
+
