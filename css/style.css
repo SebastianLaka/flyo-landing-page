@@ -9,7 +9,10 @@
 
 @media (min-width: 375px) {
   .main-site {
-    padding: 1em;
+    padding: 1em 0.5em;
+  }
+  .main-site .nav {
+    padding: 1.5em 0;
   }
   .main-site .nav .nav-container {
     display: -webkit-box;
@@ -33,6 +36,7 @@
   }
   .main-site .nav .nav-container .nav-links__link {
     padding: 0.5em;
+    cursor: pointer;
   }
 }
 @media (min-width: 576px) {
