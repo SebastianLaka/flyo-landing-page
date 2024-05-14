@@ -2,10 +2,17 @@
 @use "./colors" as *;
 @use "./font" as *;
 @use "./mixins" as *;
+@use "./mobile" as *;
+@use "./desktop" as *;
 body{
     font-family:"Open Sans", sans-serif ;
     font-size: $p-size;
     color: $very-dark-blue;
+    min-height: 100svh;
 }
-@use "./mobile" as *;
-@use "./desktop" as *;
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+

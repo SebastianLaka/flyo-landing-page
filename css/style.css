@@ -11,4 +11,11 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   color: hsl(243, 87%, 12%);
+  min-height: 100svh;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
