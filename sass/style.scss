@@ -2,3 +2,10 @@
 @use "./colors" as *;
 @use "./font" as *;
 @use "./mixins" as *;
+body{
+    font-family:"Open Sans", sans-serif ;
+    font-size: $p-size;
+    color: $very-dark-blue;
+}
+@use "./mobile" as *;
+@use "./desktop" as *;
