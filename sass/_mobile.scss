@@ -4,9 +4,9 @@
 @use "./mixins" as *;
 @media (min-width: 375px) {
   .main-site {
-    padding: 1em .5em;
+    padding: 0.5em;
     .nav {
-        padding: 1.5em 0;
+      padding: 1.5em 0;
       .nav-container {
         display: flex;
         justify-content: space-between;
@@ -25,6 +25,12 @@
       }
     }
   }
+  .header-site {
+    &__illustration-primary {
+      display: block;
+      width: 100%;
+    }
+  }
 }
 @media (min-width: 576px) {
   .main-site {
@@ -39,7 +45,7 @@
             padding: 1em;
           }
           &__link:nth-child(2) {
-            margin: 0 .25em;
+            margin: 0 0.25em;
           }
         }
       }
