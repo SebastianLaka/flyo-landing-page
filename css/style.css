@@ -10,6 +10,7 @@
 @media (min-width: 375px) {
   .main-site {
     padding: 0.5em;
+    min-height: 100svh;
   }
   .main-site .nav {
     padding: 1.5em 0;
@@ -38,9 +39,45 @@
     padding: 0.5em;
     cursor: pointer;
   }
+  .header-site {
+    padding: 4em 0;
+  }
   .header-site__illustration-primary {
     display: block;
     width: 100%;
+  }
+  .header-site .header-content {
+    padding: 0.5em 0;
+  }
+  .header-site .header-content__heading {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+  }
+  .header-site .header-content__description {
+    text-align: center;
+    line-height: 150%;
+    padding: 1em 0;
+  }
+  .header-site .header-content__input {
+    width: 100%;
+    padding: 0.75em;
+    font-size: 1rem;
+    border: 0.1em solid hsl(243, 87%, 12%);
+    border-radius: 0.2em;
+    outline-color: hsl(243, 87%, 12%);
+  }
+  .header-site .header-content__cta {
+    margin-top: 1em;
+    width: 100%;
+    padding: 0.75em 1.5em;
+    font-size: 1rem;
+    font-family: inherit;
+    border-radius: 0.2em;
+    border: none;
+    background-color: hsl(224, 93%, 58%);
+    color: hsl(240, 75%, 98%);
   }
 }
 @media (min-width: 576px) {

@@ -5,6 +5,7 @@
 @media (min-width: 375px) {
   .main-site {
     padding: 0.5em;
+    min-height: 100svh;
     .nav {
       padding: 1.5em 0;
       .nav-container {
@@ -26,9 +27,43 @@
     }
   }
   .header-site {
+    padding: 4em 0;
     &__illustration-primary {
       display: block;
       width: 100%;
+    }
+    .header-content{
+        padding: .5em 0;
+        &__heading{
+            font-size: $h-size;
+            font-weight: $bold-weight;
+            line-height: 150%;
+            text-align: center;
+        }
+        &__description{
+            text-align: center;
+            line-height: 150%;
+            padding: 1em 0;
+        }
+        &__input{
+            width: 100%;
+            padding: .75em;
+            font-size: 1rem;
+            border: .1em solid $very-dark-blue;
+            border-radius: .2em;
+            outline-color: $very-dark-blue;
+        }
+        &__cta{
+            margin-top: 1em;
+            width: 100%;
+            padding: .75em 1.5em;
+            font-size: $p-size;
+            font-family: inherit;
+            border-radius: .2em;
+            border: none;
+            background-color: $bright-blue;
+            color: $light-grayish-blue;
+        }
     }
   }
 }
