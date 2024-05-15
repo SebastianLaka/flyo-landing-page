@@ -40,14 +40,14 @@
     cursor: pointer;
   }
   .header-site {
-    padding: 4em 0;
-  }
-  .header-site__illustration-primary {
-    display: block;
-    width: 100%;
+    padding-top: 4.5em;
   }
   .header-site .header-content {
     padding: 0.5em 0;
+  }
+  .header-site .header-content__illustration-primary {
+    display: block;
+    width: 100%;
   }
   .header-site .header-content__heading {
     font-size: 2rem;
@@ -78,6 +78,10 @@
     border: none;
     background-color: hsl(224, 93%, 58%);
     color: hsl(240, 75%, 98%);
+  }
+  .about-site__illustration-secondary {
+    display: block;
+    width: 100%;
   }
 }
 @media (min-width: 576px) {
