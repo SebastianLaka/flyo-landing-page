@@ -1,3 +1,5 @@
+@use "./colors" as *;
+@use "./font" as *;
 @mixin set-image {
   display: block;
   width: 100%;

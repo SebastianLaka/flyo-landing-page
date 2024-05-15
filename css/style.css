@@ -52,8 +52,8 @@
   .main-site .header-site .header-content__heading {
     font-size: 2rem;
     font-weight: 700;
-    line-height: 150%;
     text-align: center;
+    line-height: 150%;
   }
   .main-site .header-site .header-content__description {
     text-align: center;
@@ -91,6 +91,24 @@
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
+  }
+  .main-site .about-site .site-description__description {
+    padding-top: 1.25em;
+  }
+  .main-site .about-site .site-description__redirect-link {
+    color: hsl(170, 45%, 43%);
+    padding: 2em 0;
+    position: relative;
+    display: block;
+    text-align: center;
+    z-index: 0;
+    text-underline-offset: 0.6em;
+  }
+  .main-site .about-site .site-description__redirect-link--icon {
+    content: url(../img/icon-arrow.svg);
+    position: absolute;
+    top: 44%;
+    margin-left: 0.1em;
   }
 }
 @media (min-width: 576px) {

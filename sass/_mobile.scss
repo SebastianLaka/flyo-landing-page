@@ -25,56 +25,74 @@
         }
       }
     }
-  .header-site {
-    padding-top: 2.5em;
-    &__illustration-primary {
-      @include set-image;
+    .header-site {
+      padding-top: 2.5em;
+      &__illustration-primary {
+        @include set-image;
+      }
+      .header-content {
+        padding: 0.5em 0;
+        &__heading {
+          @include heading-style;
+          line-height: 150%;
+        }
+        &__description {
+          text-align: center;
+          line-height: 150%;
+          padding: 1em 0;
+        }
+        &__input {
+          width: 100%;
+          padding: 0.75em;
+          font-size: 1rem;
+          border: 0.1em solid $very-dark-blue;
+          border-radius: 0.2em;
+          outline-color: $very-dark-blue;
+        }
+        &__cta {
+          margin-top: 1em;
+          width: 100%;
+          padding: 0.75em 1.5em;
+          font-size: $p-size;
+          font-family: inherit;
+          border-radius: 0.2em;
+          border: none;
+          background-color: $bright-blue;
+          color: $light-grayish-blue;
+        }
+      }
     }
-    .header-content {
-      padding: 0.5em 0;
-      &__heading {
-        @include heading-style;
-        line-height: 150%;
+    .about-site {
+      padding-top: 2.5em;
+      &__illustration-secondary {
+        @include set-image;
+        padding: 4em 0;
       }
-      &__description {
-        text-align: center;
-        line-height: 150%;
-        padding: 1em 0;
-      }
-      &__input {
-        width: 100%;
-        padding: 0.75em;
-        font-size: 1rem;
-        border: 0.1em solid $very-dark-blue;
-        border-radius: 0.2em;
-        outline-color: $very-dark-blue;
-      }
-      &__cta {
-        margin-top: 1em;
-        width: 100%;
-        padding: 0.75em 1.5em;
-        font-size: $p-size;
-        font-family: inherit;
-        border-radius: 0.2em;
-        border: none;
-        background-color: $bright-blue;
-        color: $light-grayish-blue;
+      .site-description {
+        &__heading {
+          @include heading-style;
+        }
+        &__description {
+          padding-top: 1.25em;
+        }
+        &__redirect-link {
+          color: $moderate-cyan;
+          padding: 2em 0;
+          position: relative;
+          display: block;
+          text-align: center;
+          z-index: 0;
+          text-underline-offset: 0.6em;
+          &--icon {
+            content: url(../img/icon-arrow.svg);
+            position: absolute;
+            top: 44%;
+            margin-left: .1em;
+          }
+        }
       }
     }
   }
-  .about-site {
-    padding-top: 2.5em;
-    &__illustration-secondary {
-      @include set-image;
-      padding: 4em 0;
-    }
-    .site-description{
-      &__heading{
-        @include heading-style;
-      }
-    }
-  }
-}
 }
 @media (min-width: 576px) {
   .main-site {
