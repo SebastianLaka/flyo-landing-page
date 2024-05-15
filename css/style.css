@@ -102,13 +102,22 @@
     display: block;
     text-align: center;
     z-index: 0;
-    text-underline-offset: 0.6em;
+    text-decoration: none;
   }
   .main-site .about-site .site-description__redirect-link--icon {
     content: url(../img/icon-arrow.svg);
     position: absolute;
-    top: 44%;
+    top: 43%;
     margin-left: 0.1em;
+  }
+  .main-site .about-site .site-description__redirect-link::before {
+    content: "";
+    position: absolute;
+    top: 66%;
+    left: 36.8%;
+    height: 0.1em;
+    width: 160px;
+    background-color: hsl(170, 45%, 43%);
   }
 }
 @media (min-width: 576px) {
