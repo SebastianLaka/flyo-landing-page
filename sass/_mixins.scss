@@ -1,4 +1,9 @@
-@mixin set-image{
-    display: block;
-    width: 100%;
+@mixin set-image {
+  display: block;
+  width: 100%;
+}
+@mixin heading-style{
+  font-size: $h-size;
+  font-weight: $bold-weight;
+  text-align: center;
 }

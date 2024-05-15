@@ -25,19 +25,16 @@
         }
       }
     }
-  }
   .header-site {
-    padding-top: 4.5em;
+    padding-top: 2.5em;
+    &__illustration-primary {
+      @include set-image;
+    }
     .header-content {
       padding: 0.5em 0;
-      &__illustration-primary {
-        @include set-image;
-      }
       &__heading {
-        font-size: $h-size;
-        font-weight: $bold-weight;
+        @include heading-style;
         line-height: 150%;
-        text-align: center;
       }
       &__description {
         text-align: center;
@@ -66,10 +63,18 @@
     }
   }
   .about-site {
+    padding-top: 2.5em;
     &__illustration-secondary {
       @include set-image;
+      padding: 4em 0;
+    }
+    .site-description{
+      &__heading{
+        @include heading-style;
+      }
     }
   }
+}
 }
 @media (min-width: 576px) {
   .main-site {
