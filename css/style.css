@@ -97,27 +97,20 @@
   }
   .main-site .about-site .site-description__redirect-link {
     color: hsl(170, 45%, 43%);
-    padding: 2em 0;
     position: relative;
     display: block;
-    text-align: center;
-    z-index: 0;
+    margin: auto;
     text-decoration: none;
+    padding: 0.25em 0;
+    z-index: 0;
+    width: 10em;
+    border-bottom: 1px solid hsl(170, 45%, 43%);
   }
   .main-site .about-site .site-description__redirect-link--icon {
     content: url(../img/icon-arrow.svg);
     position: absolute;
-    top: 43%;
+    top: 25%;
     margin-left: 0.1em;
-  }
-  .main-site .about-site .site-description__redirect-link::before {
-    content: "";
-    position: absolute;
-    top: 66%;
-    left: 36.8%;
-    height: 0.1em;
-    width: 160px;
-    background-color: hsl(170, 45%, 43%);
   }
 }
 @media (min-width: 576px) {

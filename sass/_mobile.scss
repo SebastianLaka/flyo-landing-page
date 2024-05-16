@@ -77,26 +77,20 @@
         }
         &__redirect-link {
           color: $moderate-cyan;
-          padding: 2em 0;
           position: relative;
           display: block;
-          text-align: center;
-          z-index: 0;
+          margin: auto;
           text-decoration: none;
+          padding: .25em 0;
+          z-index: 0;
+          width: 10em;
+          border-bottom: 1px solid $moderate-cyan;
           &--icon {
             content: url(../img/icon-arrow.svg);
             position: absolute;
-            top: 43%;
+            top: 25%;
             margin-left: .1em;
           }
-        }
-        &__redirect-link::before{
-          content: '';
-          position: absolute;
-          top: 66%;left: 36.8%;
-          height: .1em;
-          width: 160px;
-          background-color: $moderate-cyan;
         }
       }
     }
