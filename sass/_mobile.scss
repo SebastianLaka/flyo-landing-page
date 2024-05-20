@@ -81,12 +81,13 @@
         }
         &__description {
           padding-top: 1.25em;
+          line-height: 150%;
         }
         &__redirect-link {
           color: $moderate-cyan;
           position: relative;
           display: block;
-          margin: 0.75em auto;
+          margin: 1.25em auto;
           text-decoration: none;
           padding: 0.25em 0;
           z-index: 0;
@@ -100,7 +101,9 @@
           }
         }
       }
+
     }
+    
   }
 }
 @media (min-width: 576px) {

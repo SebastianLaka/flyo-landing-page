@@ -101,12 +101,13 @@
   }
   .main-site .about-site .site-description__description {
     padding-top: 1.25em;
+    line-height: 150%;
   }
   .main-site .about-site .site-description__redirect-link {
     color: hsl(170, 45%, 43%);
     position: relative;
     display: block;
-    margin: 0.75em auto;
+    margin: 1.25em auto;
     text-decoration: none;
     padding: 0.25em 0;
     z-index: 0;
