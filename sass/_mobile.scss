@@ -7,7 +7,11 @@
     padding: 0.5em;
     min-height: 100svh;
     .nav {
-      padding: 1.5em 0;
+      padding: 1em 0.5em;
+      position: fixed;
+      width: 100%;
+      left: 0;
+      right: 0;
       .nav-container {
         display: flex;
         justify-content: space-between;
@@ -22,11 +26,14 @@
             padding: 0.5em;
             cursor: pointer;
           }
+          &__link:last-child{
+            padding-right: 0;
+          }
         }
       }
     }
     .header-site {
-      padding-top: 2.5em;
+      padding-top: 5.5em;
       &__illustration-primary {
         @include set-image;
       }
@@ -79,9 +86,9 @@
           color: $moderate-cyan;
           position: relative;
           display: block;
-          margin: auto;
+          margin: 0.75em auto;
           text-decoration: none;
-          padding: .25em 0;
+          padding: 0.25em 0;
           z-index: 0;
           width: 10em;
           border-bottom: 1px solid $moderate-cyan;
@@ -89,7 +96,7 @@
             content: url(../img/icon-arrow.svg);
             position: absolute;
             top: 25%;
-            margin-left: .1em;
+            margin-left: 0.1em;
           }
         }
       }
