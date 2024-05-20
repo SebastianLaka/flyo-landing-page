@@ -101,7 +101,35 @@
           }
         }
       }
-
+      .card-box{
+      margin: auto;
+      padding: 1.25em 0;
+      max-width: 25em;
+        &__icon{
+          width: 1.5em;
+        }
+        &__description{
+          line-height: 150%;
+        }
+        .person-box{
+          display: flex;
+          align-items: center;
+          padding-top: 1em;
+          &__avatar{
+            border-radius: 50%;
+            width: 3em;
+          }
+          .person-info{
+            padding-left: .75em;
+            &__name{
+              font-weight: $bold-weight;
+            }
+            &__proffesion{
+              font-size: .650rem;
+            }
+          }
+        }
+      }
     }
     
   }
