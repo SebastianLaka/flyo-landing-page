@@ -4,7 +4,7 @@
 @use "./mixins" as *;
 @media (min-width: 375px) {
   .main-site {
-    padding: 0.5em;
+    
     min-height: 100svh;
     .nav {
       padding: 1em 0.5em;
@@ -16,6 +16,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0.5em;
         &__logo {
           width: 8em;
         }
@@ -33,12 +34,11 @@
       }
     }
     .header-site {
-      padding-top: 5.5em;
+      padding: 5.5em .5em 0 .5em;
       &__illustration-primary {
         @include set-image;
       }
       .header-content {
-        padding: 0.5em 0;
         &__heading {
           @include heading-style;
           line-height: 150%;
@@ -70,6 +70,7 @@
       }
     }
     .about-site {
+      padding: 0.5em;
       padding-top: 2.5em;
       &__illustration-secondary {
         @include set-image;
@@ -134,8 +135,31 @@
     .newsletter-area{
       @include center-flex;
       background-color: $desaturate-blue;
-      padding: 2em;
+      padding: 3em;
       margin-top: 3em;
+      &__header,
+      &__description{
+        color: $white-color;
+        font-weight: $regular-weight;
+      }
+      &__description{
+        padding: 2em 0;
+        line-height: 150%;
+      }
+      &__email-place,
+      &__cta{
+        width: 100%;
+        padding: .75em 1.5em;
+        font-size: $p-size;
+        border-radius: .4em;
+        border: none;
+        font-family: inherit;
+      }
+      &__cta{
+        background-color: $bright-blue;
+        color: $white-color;
+       margin-top: .6em;
+      }
     }
   }
 }

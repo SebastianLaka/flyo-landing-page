@@ -9,7 +9,6 @@
 
 @media (min-width: 375px) {
   .main-site {
-    padding: 0.5em;
     min-height: 100svh;
   }
   .main-site .nav {
@@ -29,6 +28,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0.5em;
   }
   .main-site .nav .nav-container__logo {
     width: 8em;
@@ -47,14 +47,11 @@
     padding-right: 0;
   }
   .main-site .header-site {
-    padding-top: 5.5em;
+    padding: 5.5em 0.5em 0 0.5em;
   }
   .main-site .header-site__illustration-primary {
     display: block;
     width: 100%;
-  }
-  .main-site .header-site .header-content {
-    padding: 0.5em 0;
   }
   .main-site .header-site .header-content__heading {
     font-size: 2rem;
@@ -87,6 +84,7 @@
     color: hsl(240, 75%, 98%);
   }
   .main-site .about-site {
+    padding: 0.5em;
     padding-top: 2.5em;
   }
   .main-site .about-site__illustration-secondary {
@@ -168,8 +166,29 @@
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: hsl(238, 22%, 44%);
-    padding: 2em;
+    padding: 3em;
     margin-top: 3em;
+  }
+  .main-site .newsletter-area__header, .main-site .newsletter-area__description {
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+  }
+  .main-site .newsletter-area__description {
+    padding: 2em 0;
+    line-height: 150%;
+  }
+  .main-site .newsletter-area__email-place, .main-site .newsletter-area__cta {
+    width: 100%;
+    padding: 0.75em 1.5em;
+    font-size: 1rem;
+    border-radius: 0.4em;
+    border: none;
+    font-family: inherit;
+  }
+  .main-site .newsletter-area__cta {
+    background-color: hsl(224, 93%, 58%);
+    color: hsl(0, 0%, 100%);
+    margin-top: 0.6em;
   }
 }
 @media (min-width: 576px) {
