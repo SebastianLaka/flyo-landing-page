@@ -134,6 +134,8 @@
     .newsletter-area{
       @include center-flex;
       background-color: $desaturate-blue;
+      padding: 2em;
+      margin-top: 3em;
     }
   }
 }
