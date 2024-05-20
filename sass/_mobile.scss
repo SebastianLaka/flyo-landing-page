@@ -131,7 +131,10 @@
         }
       }
     }
-    
+    .newsletter-area{
+      @include center-flex;
+      background-color: $desaturate-blue;
+    }
   }
 }
 @media (min-width: 576px) {

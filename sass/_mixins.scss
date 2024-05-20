@@ -9,3 +9,9 @@
   font-weight: $bold-weight;
   text-align: center;
 }
+@mixin center-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
