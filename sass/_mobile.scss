@@ -164,22 +164,31 @@
       background-color: $very-dark-blue;
       padding: 3em;
       @include column-flex;
+      gap: 2em;
       .contact-block{
         &__contact{
           position: relative;
           color: $white-color;
-          padding-top: .5em;
           padding-left: 2em;
         }
         &__contact::before{
           position: absolute;
           left: 0;
-          top: 0.6em;
           content: url(../img/icon-phone.svg);
           
         }
         &__contact:last-child::before{
           content: url(../img/icon-email.svg);
+        }
+      }
+      .about-company-block, .policy-box{
+        color: $white-color;
+      }
+      .social-media-box{
+        &__icon{
+          border: .1em solid $white-color;
+          padding: .5em;
+          border-radius: 50%;
         }
       }
     }

@@ -199,21 +199,28 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 2em;
   }
   .main-site .footer .contact-block__contact {
     position: relative;
     color: hsl(0, 0%, 100%);
-    padding-top: 0.5em;
     padding-left: 2em;
   }
   .main-site .footer .contact-block__contact::before {
     position: absolute;
     left: 0;
-    top: 0.6em;
     content: url(../img/icon-phone.svg);
   }
   .main-site .footer .contact-block__contact:last-child::before {
     content: url(../img/icon-email.svg);
+  }
+  .main-site .footer .about-company-block, .main-site .footer .policy-box {
+    color: hsl(0, 0%, 100%);
+  }
+  .main-site .footer .social-media-box__icon {
+    border: 0.1em solid hsl(0, 0%, 100%);
+    padding: 0.5em;
+    border-radius: 50%;
   }
 }
 @media (min-width: 576px) {
