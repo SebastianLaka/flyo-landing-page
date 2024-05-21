@@ -34,7 +34,7 @@
       }
     }
     .header-site {
-      padding: 5.5em .5em 0 .5em;
+      padding: 5.5em 3em 0 3em;
       &__illustration-primary {
         @include set-image;
       }
@@ -70,8 +70,7 @@
       }
     }
     .about-site {
-      padding: 0.5em;
-      padding-top: 2.5em;
+      padding: 3em;
       &__illustration-secondary {
         @include set-image;
         padding: 4em 0;
@@ -163,7 +162,7 @@
     }
     .footer{
       background-color: $very-dark-blue;
-      padding: 2em;
+      padding: 3em;
       @include column-flex;
       .contact-block{
         &__contact{

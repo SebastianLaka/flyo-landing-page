@@ -47,7 +47,7 @@
     padding-right: 0;
   }
   .main-site .header-site {
-    padding: 5.5em 0.5em 0 0.5em;
+    padding: 5.5em 3em 0 3em;
   }
   .main-site .header-site__illustration-primary {
     display: block;
@@ -84,8 +84,7 @@
     color: hsl(240, 75%, 98%);
   }
   .main-site .about-site {
-    padding: 0.5em;
-    padding-top: 2.5em;
+    padding: 3em;
   }
   .main-site .about-site__illustration-secondary {
     display: block;
@@ -192,7 +191,7 @@
   }
   .main-site .footer {
     background-color: hsl(243, 87%, 12%);
-    padding: 2em;
+    padding: 3em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
