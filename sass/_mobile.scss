@@ -161,6 +161,25 @@
        margin-top: .6em;
       }
     }
+    .footer{
+      background-color: $very-dark-blue;
+      padding: 2em;
+      @include column-flex;
+      .contact-block{
+        &__contact{
+          position: relative;
+          color: $white-color;
+          padding-top: .5em;
+          padding-left: 2em;
+        }
+        &__contact::before{
+          position: absolute;
+          left: 0;
+          top: 0.6em;
+          content: url(../img/icon-email.svg);
+        }
+      }
+    }
   }
 }
 @media (min-width: 576px) {

@@ -190,6 +190,29 @@
     color: hsl(0, 0%, 100%);
     margin-top: 0.6em;
   }
+  .main-site .footer {
+    background-color: hsl(243, 87%, 12%);
+    padding: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-site .footer .contact-block__contact {
+    position: relative;
+    color: hsl(0, 0%, 100%);
+    padding-top: 0.5em;
+    padding-left: 2em;
+  }
+  .main-site .footer .contact-block__contact::before {
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    content: url(../img/icon-email.svg);
+  }
 }
 @media (min-width: 576px) {
   .main-site .nav .nav-container .nav-links {
