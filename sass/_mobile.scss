@@ -175,6 +175,10 @@
           position: absolute;
           left: 0;
           top: 0.6em;
+          content: url(../img/icon-phone.svg);
+          
+        }
+        &__contact:last-child::before{
           content: url(../img/icon-email.svg);
         }
       }
