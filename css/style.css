@@ -5,6 +5,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 @media (min-width: 375px) {
@@ -37,7 +38,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    list-style-type: none;
   }
   .main-site .nav .nav-container .nav-links__link {
     padding: 0.5em;
@@ -192,6 +192,8 @@
   .main-site .footer {
     background-color: hsl(243, 87%, 12%);
     padding: 3em;
+  }
+  .main-site .footer .footer-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -199,25 +201,58 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 2em;
+    gap: 1em;
+    padding-top: 4em;
+    gap: 4em;
   }
-  .main-site .footer .contact-block__contact {
+  .main-site .footer .footer-content .contact-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1em;
+  }
+  .main-site .footer .footer-content .contact-block__contact {
     position: relative;
     color: hsl(0, 0%, 100%);
     padding-left: 2em;
   }
-  .main-site .footer .contact-block__contact::before {
+  .main-site .footer .footer-content .contact-block__contact::before {
     position: absolute;
     left: 0;
     content: url(../img/icon-phone.svg);
   }
-  .main-site .footer .contact-block__contact:last-child::before {
+  .main-site .footer .footer-content .contact-block__contact:last-child::before {
     content: url(../img/icon-email.svg);
   }
-  .main-site .footer .about-company-block, .main-site .footer .policy-box {
+  .main-site .footer .footer-content .about-company-block,
+  .main-site .footer .footer-content .policy-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1em;
+  }
+  .main-site .footer .footer-content .about-company-block__link,
+  .main-site .footer .footer-content .policy-box__link {
     color: hsl(0, 0%, 100%);
   }
-  .main-site .footer .social-media-box__icon {
+  .main-site .footer .footer-content .social-media-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1em;
+  }
+  .main-site .footer .footer-content .social-media-box__icon {
     border: 0.1em solid hsl(0, 0%, 100%);
     padding: 0.5em;
     border-radius: 50%;

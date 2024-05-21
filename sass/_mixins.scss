@@ -4,18 +4,24 @@
   display: block;
   width: 100%;
 }
-@mixin heading-style{
+@mixin heading-style {
   font-size: $h-size;
   font-weight: $bold-weight;
   text-align: center;
 }
-@mixin center-flex{
+@mixin center-flex {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-@mixin column-flex{
+@mixin column-flex {
   display: flex;
   flex-direction: column;
+  gap: 1em;
+}
+@mixin flex-center-inline {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
 }

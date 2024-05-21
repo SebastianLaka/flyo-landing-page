@@ -4,7 +4,6 @@
 @use "./mixins" as *;
 @media (min-width: 375px) {
   .main-site {
-    
     min-height: 100svh;
     .nav {
       padding: 1em 0.5em;
@@ -22,12 +21,11 @@
         }
         .nav-links {
           display: flex;
-          list-style-type: none;
           &__link {
             padding: 0.5em;
             cursor: pointer;
           }
-          &__link:last-child{
+          &__link:last-child {
             padding-right: 0;
           }
         }
@@ -101,94 +99,102 @@
           }
         }
       }
-      .card-box{
-      margin: auto;
-      padding: 1.25em 0;
-      max-width: 25em;
-        &__icon{
+      .card-box {
+        margin: auto;
+        padding: 1.25em 0;
+        max-width: 25em;
+        &__icon {
           width: 1.5em;
         }
-        &__description{
+        &__description {
           line-height: 150%;
         }
-        .person-box{
+        .person-box {
           display: flex;
           align-items: center;
           padding-top: 1em;
-          &__avatar{
+          &__avatar {
             border-radius: 50%;
             width: 3em;
           }
-          .person-info{
-            padding-left: .75em;
-            &__name{
+          .person-info {
+            padding-left: 0.75em;
+            &__name {
               font-weight: $bold-weight;
             }
-            &__proffesion{
-              font-size: .650rem;
+            &__proffesion {
+              font-size: 0.65rem;
             }
           }
         }
       }
     }
-    .newsletter-area{
+    .newsletter-area {
       @include center-flex;
       background-color: $desaturate-blue;
       padding: 3em;
       margin-top: 3em;
       &__header,
-      &__description{
+      &__description {
         color: $white-color;
         font-weight: $regular-weight;
       }
-      &__description{
+      &__description {
         padding: 2em 0;
         line-height: 150%;
       }
       &__email-place,
-      &__cta{
+      &__cta {
         width: 100%;
-        padding: .75em 1.5em;
+        padding: 0.75em 1.5em;
         font-size: $p-size;
-        border-radius: .4em;
+        border-radius: 0.4em;
         border: none;
         font-family: inherit;
       }
-      &__cta{
+      &__cta {
         background-color: $bright-blue;
         color: $white-color;
-       margin-top: .6em;
+        margin-top: 0.6em;
       }
     }
-    .footer{
+    .footer {
       background-color: $very-dark-blue;
       padding: 3em;
-      @include column-flex;
-      gap: 2em;
-      .contact-block{
-        &__contact{
-          position: relative;
-          color: $white-color;
-          padding-left: 2em;
+      .footer-content {
+        @include column-flex;
+        padding-top: 4em;
+        gap: 4em;
+        .contact-block {
+          @include column-flex;
+          &__contact {
+            position: relative;
+            color: $white-color;
+            padding-left: 2em;
+          }
+          &__contact::before {
+            position: absolute;
+            left: 0;
+            content: url(../img/icon-phone.svg);
+          }
+          &__contact:last-child::before {
+            content: url(../img/icon-email.svg);
+          }
         }
-        &__contact::before{
-          position: absolute;
-          left: 0;
-          content: url(../img/icon-phone.svg);
-          
+        .about-company-block,
+        .policy-box {
+          @include column-flex;
+          &__link {
+            color: $white-color;
+          }
         }
-        &__contact:last-child::before{
-          content: url(../img/icon-email.svg);
-        }
-      }
-      .about-company-block, .policy-box{
-        color: $white-color;
-      }
-      .social-media-box{
-        &__icon{
-          border: .1em solid $white-color;
-          padding: .5em;
-          border-radius: 50%;
+        .social-media-box {
+          @include flex-center-inline;
+          &__icon {
+            border: 0.1em solid $white-color;
+            padding: 0.5em;
+            border-radius: 50%;
+          }
         }
       }
     }
