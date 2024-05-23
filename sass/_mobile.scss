@@ -46,24 +46,26 @@
           line-height: 150%;
           padding: 1em 0;
         }
-        &__input {
-          width: 100%;
-          padding: 0.75em;
-          font-size: 1rem;
-          border: 0.1em solid $very-dark-blue;
-          border-radius: 0.2em;
-          outline-color: $very-dark-blue;
-        }
-        &__cta {
-          margin-top: 1em;
-          width: 100%;
-          padding: 0.75em 1.5em;
-          font-size: $p-size;
-          font-family: inherit;
-          border-radius: 0.2em;
-          border: none;
-          background-color: $bright-blue;
-          color: $light-grayish-blue;
+        .header-interaction {
+          &__input {
+            width: 100%;
+            padding: 0.75em;
+            font-size: 1rem;
+            border: 0.1em solid $very-dark-blue;
+            border-radius: 0.2em;
+            outline-color: $very-dark-blue;
+          }
+          &__cta {
+            margin-top: 1em;
+            width: 100%;
+            padding: 0.75em 1.5em;
+            font-size: $p-size;
+            font-family: inherit;
+            border-radius: 0.2em;
+            border: none;
+            background-color: $bright-blue;
+            color: $light-grayish-blue;
+          }
         }
       }
     }
@@ -143,19 +145,21 @@
         padding: 2em 0;
         line-height: 150%;
       }
-      &__email-place,
-      &__cta {
-        width: 100%;
-        padding: 0.75em 1.5em;
-        font-size: $p-size;
-        border-radius: 0.4em;
-        border: none;
-        font-family: inherit;
-      }
-      &__cta {
-        background-color: $bright-blue;
-        color: $white-color;
-        margin-top: 0.6em;
+      .newsletter-interaction {
+        &__email-place,
+        &__cta {
+          width: 100%;
+          padding: 0.75em 1.5em;
+          font-size: $p-size;
+          border-radius: 0.4em;
+          border: none;
+          font-family: inherit;
+        }
+        &__cta {
+          background-color: $bright-blue;
+          color: $white-color;
+          margin-top: 0.6em;
+        }
       }
     }
     .footer {
