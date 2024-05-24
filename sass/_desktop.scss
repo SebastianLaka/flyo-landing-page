@@ -8,7 +8,7 @@
     .header-site {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      align-items: center;
+    
       padding: 10em 0 0 0;
       &__illustration-primary {
         grid-column: 2/3;
@@ -46,6 +46,9 @@
       .site-description {
         grid-column: 0/1;
         grid-row: 1/2;
+        &__heading{
+          text-align: left;
+        }
         &__redirect-link {
           margin: 2em 0 0 0;
         }

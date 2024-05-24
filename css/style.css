@@ -279,9 +279,6 @@
   .main-site .header-site {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     padding: 10em 0 0 0;
   }
   .main-site .header-site__illustration-primary {
@@ -324,6 +321,9 @@
   .main-site .about-site .site-description {
     grid-column: 0/1;
     grid-row: 1/2;
+  }
+  .main-site .about-site .site-description__heading {
+    text-align: left;
   }
   .main-site .about-site .site-description__redirect-link {
     margin: 2em 0 0 0;
