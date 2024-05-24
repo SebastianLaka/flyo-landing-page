@@ -64,6 +64,7 @@
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         gap: 8em;
+        padding: 3em 0;
         .newsletter-area {
           grid-column: 0/1;
           grid-row: 1/2;

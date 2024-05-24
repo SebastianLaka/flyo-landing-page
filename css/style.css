@@ -339,6 +339,7 @@
         -ms-flex-align: center;
             align-items: center;
     gap: 8em;
+    padding: 3em 0;
   }
   .main-site .newsletter-container .newsletter-box .newsletter-area {
     grid-column: 0/1;
