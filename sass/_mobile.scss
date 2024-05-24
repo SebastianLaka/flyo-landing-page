@@ -132,34 +132,38 @@
         }
       }
     }
-    .newsletter-area {
+    .newsletter-container {
       @include center-flex;
       background-color: $desaturate-blue;
       padding: 3em;
       margin-top: 3em;
-      &__header,
-      &__description {
-        color: $white-color;
-        font-weight: $regular-weight;
-      }
-      &__description {
-        padding: 2em 0;
-        line-height: 150%;
-      }
-      .newsletter-interaction {
-        &__email-place,
-        &__cta {
-          width: 100%;
-          padding: 0.75em 1.5em;
-          font-size: $p-size;
-          border-radius: 0.4em;
-          border: none;
-          font-family: inherit;
+      .newsletter-box {
+        .newsletter-area {
+          &__header,
+          &__description {
+            color: $white-color;
+            font-weight: $regular-weight;
+          }
+          &__description {
+            padding: 2em 0;
+            line-height: 150%;
+          }
         }
-        &__cta {
-          background-color: $bright-blue;
-          color: $white-color;
-          margin-top: 0.6em;
+        .newsletter-interaction {
+          &__email-place,
+          &__cta {
+            width: 100%;
+            padding: 0.75em 1.5em;
+            font-size: $p-size;
+            border-radius: 0.4em;
+            border: none;
+            font-family: inherit;
+          }
+          &__cta {
+            background-color: $bright-blue;
+            color: $white-color;
+            margin-top: 0.6em;
+          }
         }
       }
     }

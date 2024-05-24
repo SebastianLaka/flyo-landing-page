@@ -151,7 +151,7 @@
   .main-site .about-site .card-box .person-box .person-info__proffesion {
     font-size: 0.65rem;
   }
-  .main-site .newsletter-area {
+  .main-site .newsletter-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -169,15 +169,15 @@
     padding: 3em;
     margin-top: 3em;
   }
-  .main-site .newsletter-area__header, .main-site .newsletter-area__description {
+  .main-site .newsletter-container .newsletter-box .newsletter-area__header, .main-site .newsletter-container .newsletter-box .newsletter-area__description {
     color: hsl(0, 0%, 100%);
     font-weight: 400;
   }
-  .main-site .newsletter-area__description {
+  .main-site .newsletter-container .newsletter-box .newsletter-area__description {
     padding: 2em 0;
     line-height: 150%;
   }
-  .main-site .newsletter-area .newsletter-interaction__email-place, .main-site .newsletter-area .newsletter-interaction__cta {
+  .main-site .newsletter-container .newsletter-box .newsletter-interaction__email-place, .main-site .newsletter-container .newsletter-box .newsletter-interaction__cta {
     width: 100%;
     padding: 0.75em 1.5em;
     font-size: 1rem;
@@ -185,7 +185,7 @@
     border: none;
     font-family: inherit;
   }
-  .main-site .newsletter-area .newsletter-interaction__cta {
+  .main-site .newsletter-container .newsletter-box .newsletter-interaction__cta {
     background-color: hsl(224, 93%, 58%);
     color: hsl(0, 0%, 100%);
     margin-top: 0.6em;
@@ -331,6 +331,24 @@
   .main-site .about-site .site-description .card-box {
     padding: 2.5em 0 1.25em 2em;
     margin: 0;
+  }
+  .main-site .newsletter-container .newsletter-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 8em;
+  }
+  .main-site .newsletter-container .newsletter-box .newsletter-area {
+    grid-column: 0/1;
+    grid-row: 1/2;
+  }
+  .main-site .newsletter-container .newsletter-box .newsletter-area__description {
+    padding: 1em 0 0 0;
+  }
+  g .main-site .newsletter-container .newsletter-box .newsletter-interaction__cta {
+    width: 50%;
   }
 }
 body {
