@@ -20,15 +20,15 @@
           text-align: left;
           font-size: 2.4rem;
         }
-        &__description{
+        &__description {
           text-align: left;
-          padding-right: 3.90em;
+          padding-right: 3.9em;
         }
-        .header-interaction{
+        .header-interaction {
           display: flex;
           gap: 1em;
           width: 85%;
-          &__cta{
+          &__cta {
             margin-top: 0;
             width: 70%;
           }
@@ -40,12 +40,19 @@
       grid-template-columns: repeat(2, 1fr);
       align-items: center;
       padding: 10em 0 0 0;
-      &__illustration-secondary{
+      &__illustration-secondary {
         grid-column: 2/3;
       }
-      .site-description{
+      .site-description {
         grid-column: 0/1;
         grid-row: 1/2;
+        &__redirect-link {
+          margin: 2em 0 0 0;
+        }
+        .card-box{
+          padding: 2.5em 0 1.25em 2em;
+          margin: 0;
+        }
       }
     }
   }
