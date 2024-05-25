@@ -168,43 +168,45 @@
         }
       }
     }
-    .footer {
+    .footer-container {
       background-color: $very-dark-blue;
       padding: 3em;
-      .footer-content {
+      @include column-flex;
+      padding-top: 4em;
+      gap: 4em;
+      &__logo{
+        width: 166px;
+        height: 49px;
+      }
+      .contact-block {
         @include column-flex;
-        padding-top: 4em;
-        gap: 4em;
-        .contact-block {
-          @include column-flex;
-          &__contact {
-            position: relative;
-            color: $white-color;
-            padding-left: 2em;
-          }
-          &__contact::before {
-            position: absolute;
-            left: 0;
-            content: url(../img/icon-phone.svg);
-          }
-          &__contact:last-child::before {
-            content: url(../img/icon-email.svg);
-          }
+        &__contact {
+          position: relative;
+          color: $white-color;
+          padding-left: 2em;
         }
-        .about-company-block,
-        .policy-box {
-          @include column-flex;
-          &__link {
-            color: $white-color;
-          }
+        &__contact::before {
+          position: absolute;
+          left: 0;
+          content: url(../img/icon-phone.svg);
         }
-        .social-media-box {
-          @include flex-center-inline;
-          &__icon {
-            border: 0.1em solid $white-color;
-            padding: 0.5em;
-            border-radius: 50%;
-          }
+        &__contact:last-child::before {
+          content: url(../img/icon-email.svg);
+        }
+      }
+      .about-company-block,
+      .policy-box {
+        @include column-flex;
+        &__link {
+          color: $white-color;
+        }
+      }
+      .social-media-box {
+        @include flex-center-inline;
+        &__icon {
+          border: 0.1em solid $white-color;
+          padding: 0.5em;
+          border-radius: 50%;
         }
       }
     }
