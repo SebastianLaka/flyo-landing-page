@@ -189,6 +189,7 @@
     background-color: hsl(224, 93%, 58%);
     color: hsl(0, 0%, 100%);
     margin-top: 0.6em;
+    cursor: pointer;
   }
   .main-site .footer {
     background-color: hsl(243, 87%, 12%);
@@ -276,6 +277,9 @@
   }
 }
 @media (min-width: 1200px) {
+  .main-site .nav {
+    padding: 1em 0;
+  }
   .main-site .header-site {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
