@@ -357,23 +357,24 @@
   g .main-site .newsletter-container .newsletter-box .newsletter-interaction__cta {
     width: 50%;
   }
-  .main-site .footer-container {
+  .main-site .footer-container .footer-content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 2em 0;
   }
-  .main-site .footer-container__logo {
+  .main-site .footer-container .footer-content__logo {
     grid-column: 0/1;
   }
-  .main-site .footer-container .contact-block {
+  .main-site .footer-container .footer-content .contact-block {
     grid-column: 1/2;
     grid-row: 0/1;
   }
-  .main-site .footer-container .social-media-box {
+  .main-site .footer-container .footer-content .social-media-box {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
   }
-  .main-site .footer-container .social-media-box__icon {
+  .main-site .footer-container .footer-content .social-media-box__icon {
     width: 2.5em;
     height: 2.5em;
   }

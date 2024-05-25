@@ -84,21 +84,23 @@
       }
     }
     .footer-container {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-
-      &__logo {
-        grid-column: 0/1;
-      }
-      .contact-block {
-        grid-column: 1/2;
-        grid-row: 0/1;
-      }
-      .social-media-box {
-        justify-content: start;
-        &__icon {
-          width: 2.5em;
-          height: 2.5em;
+      .footer-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2em 0;
+        &__logo {
+          grid-column: 0/1;
+        }
+        .contact-block {
+          grid-column: 1/2;
+          grid-row: 0/1;
+        }
+        .social-media-box {
+          justify-content: start;
+          &__icon {
+            width: 2.5em;
+            height: 2.5em;
+          }
         }
       }
     }
