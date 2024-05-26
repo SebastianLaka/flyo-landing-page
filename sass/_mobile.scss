@@ -104,11 +104,13 @@
             position: absolute;
             top: 25%;
             margin-left: 0.1em;
+            transition: color .5s;
           }
         }
         &__redirect-link:hover{
           color: hsl(170, 49%, 55%);
         }
+
       }
       .card-box {
         margin: auto;
@@ -231,7 +233,7 @@
           cursor: pointer;
         }
        &__icon:hover{
-        filter: invert(55%) sepia(30%) saturate(921%) hue-rotate(185deg) brightness(94%) contrast(98%);
+        filter: invert(37%) sepia(9%) saturate(1980%) hue-rotate(201deg) brightness(91%) contrast(89%);
        }
       }
     }

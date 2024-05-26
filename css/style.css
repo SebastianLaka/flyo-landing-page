@@ -124,6 +124,8 @@
     position: absolute;
     top: 25%;
     margin-left: 0.1em;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
   }
   .main-site .about-site .site-description__redirect-link:hover {
     color: hsl(170, 49%, 55%);
@@ -293,8 +295,8 @@
     cursor: pointer;
   }
   .main-site .footer-container .footer-content .social-media-box__icon:hover {
-    -webkit-filter: invert(55%) sepia(30%) saturate(921%) hue-rotate(185deg) brightness(94%) contrast(98%);
-            filter: invert(55%) sepia(30%) saturate(921%) hue-rotate(185deg) brightness(94%) contrast(98%);
+    -webkit-filter: invert(37%) sepia(9%) saturate(1980%) hue-rotate(201deg) brightness(91%) contrast(89%);
+            filter: invert(37%) sepia(9%) saturate(1980%) hue-rotate(201deg) brightness(91%) contrast(89%);
   }
 }
 @media (min-width: 576px) {
