@@ -65,10 +65,10 @@
             border: none;
             background-color: $bright-blue;
             color: $light-grayish-blue;
-            transition: background-color .5s;
+            transition: background-color 0.5s;
             cursor: pointer;
           }
-          &__cta:hover{
+          &__cta:hover {
             background-color: hsl(224, 94%, 66%);
           }
         }
@@ -98,19 +98,18 @@
           z-index: 0;
           width: 10em;
           border-bottom: 1px solid $moderate-cyan;
-          transition: color .5s;
+          transition: color 0.5s;
           &--icon {
             content: url(../img/icon-arrow.svg);
             position: absolute;
             top: 25%;
             margin-left: 0.1em;
-            transition: color .5s;
+            transition: color 0.5s;
           }
         }
-        &__redirect-link:hover{
+        &__redirect-link:hover {
           color: hsl(170, 49%, 55%);
         }
-
       }
       .card-box {
         margin: auto;
@@ -168,7 +167,7 @@
             border-radius: 0.4em;
             border: none;
             font-family: inherit;
-            transition: background-color .5s;
+            transition: background-color 0.5s;
           }
           &__cta {
             background-color: $bright-blue;
@@ -176,7 +175,7 @@
             margin-top: 0.6em;
             cursor: pointer;
           }
-          &__cta:hover{
+          &__cta:hover {
             background-color: hsl(224, 94%, 66%);
           }
         }
@@ -185,59 +184,60 @@
     .footer-container {
       background-color: $very-dark-blue;
       padding: 3em;
-      &__logo{
-        width: 166px;
-        height: 49px;
-      }
-      .footer-content{
-      @include column-flex;
-      padding-top: 4em;
-      gap: 4em;
-      .contact-block {
+   &__logo{
+    height: 3.063em;
+    width: 10.5em;
+   }
+      .footer-content {
         @include column-flex;
-        &__contact {
-          position: relative;
-          color: $white-color;
-          padding-left: 2em;
+        padding-top: 4em;
+        gap: 4em;
+        .contact-block {
+          @include column-flex;
+          &__contact {
+            position: relative;
+            color: $white-color;
+            padding-left: 2em;
+          }
+          &__contact::before {
+            position: absolute;
+            left: 0;
+            content: url(../img/icon-phone.svg);
+          }
+          &__contact:last-child::before {
+            content: url(../img/icon-email.svg);
+          }
         }
-        &__contact::before {
-          position: absolute;
-          left: 0;
-          content: url(../img/icon-phone.svg);
+        .about-company-block,
+        .policy-box {
+          @include column-flex;
+          max-width: 6em;
+          &__link {
+            color: $white-color;
+            padding: 0 0.25em;
+            transition: color 0.5s;
+            cursor: pointer;
+          }
+          &__link:hover {
+            color: $desaturate-blue;
+          }
         }
-        &__contact:last-child::before {
-          content: url(../img/icon-email.svg);
+        .social-media-box {
+          @include flex-center-inline;
+          &__icon {
+            border: 0.1em solid $white-color;
+            padding: 0.5em;
+            border-radius: 50%;
+            transition: filter 0.3s;
+            cursor: pointer;
+          }
+          &__icon:hover {
+            filter: invert(37%) sepia(9%) saturate(1980%) hue-rotate(201deg)
+              brightness(91%) contrast(89%);
+          }
         }
-      }
-      .about-company-block,
-      .policy-box {
-        @include column-flex;
-        max-width: 6em;
-        &__link {
-          color: $white-color;
-          padding: 0 .25em;
-          transition: color .5s;
-          cursor: pointer;
-        }
-        &__link:hover{
-          color: $desaturate-blue;
-        }
-      }
-      .social-media-box {
-        @include flex-center-inline;
-        &__icon {
-          border: 0.1em solid $white-color;
-          padding: 0.5em;
-          border-radius: 50%;
-          transition: filter .3s;
-          cursor: pointer;
-        }
-       &__icon:hover{
-        filter: invert(37%) sepia(9%) saturate(1980%) hue-rotate(201deg) brightness(91%) contrast(89%);
-       }
       }
     }
-  }
   }
 }
 @media (min-width: 576px) {
@@ -258,5 +258,37 @@
         }
       }
     }
+  }
+}
+@media (min-width: 768px) {
+  .main-site {
+    .header-site{
+      padding: 5.5em 1.25em 0 1.25em;
+    }
+    .about-site{
+      padding: 1em 1.25em;
+    }
+    .newsletter-container{
+      padding: 3em 1.25em;
+    }
+    .footer-container {
+      padding: 3em 1.25em;
+      &__logo {
+        width: 166px;
+        height: 50px;
+      }
+      .footer-content {
+        flex-direction: row;
+justify-content: space-between;
+        flex-wrap: wrap;
+        .social-media-box {
+          &__icon {
+            width: 2.5em;
+            height: 2.5em;
+          }
+        }
+      }
+    }
+    
   }
 }

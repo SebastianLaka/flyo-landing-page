@@ -77,7 +77,7 @@
           }
         }
         .newsletter-interaction {
-          g &__cta {
+           &__cta {
             width: 50%;
           }
         }
@@ -97,10 +97,6 @@
         }
         .social-media-box {
           justify-self: start;
-          &__icon {
-            width: 2.5em;
-            height: 2.5em;
-          }
         }
       }
     }
