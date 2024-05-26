@@ -227,8 +227,12 @@
           border: 0.1em solid $white-color;
           padding: 0.5em;
           border-radius: 50%;
+          transition: filter .3s;
           cursor: pointer;
         }
+       &__icon:hover{
+        filter: invert(55%) sepia(30%) saturate(921%) hue-rotate(185deg) brightness(94%) contrast(98%);
+       }
       }
     }
   }
