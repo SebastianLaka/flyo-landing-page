@@ -184,10 +184,10 @@
     .footer-container {
       background-color: $very-dark-blue;
       padding: 3em;
-   &__logo{
-    height: 3.063em;
-    width: 10.5em;
-   }
+      &__logo {
+        height: 3.063em;
+        width: 10.5em;
+      }
       .footer-content {
         @include column-flex;
         padding-top: 4em;
@@ -262,13 +262,13 @@
 }
 @media (min-width: 768px) {
   .main-site {
-    .header-site{
+    .header-site {
       padding: 5.5em 1.25em 0 1.25em;
     }
-    .about-site{
+    .about-site {
       padding: 1em 1.25em;
     }
-    .newsletter-container{
+    .newsletter-container {
       padding: 3em 1.25em;
     }
     .footer-container {
@@ -279,7 +279,7 @@
       }
       .footer-content {
         flex-direction: row;
-justify-content: space-between;
+        justify-content: space-between;
         flex-wrap: wrap;
         .social-media-box {
           &__icon {
@@ -289,6 +289,5 @@ justify-content: space-between;
         }
       }
     }
-    
   }
 }
