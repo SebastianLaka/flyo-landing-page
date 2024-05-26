@@ -65,13 +65,17 @@
             border: none;
             background-color: $bright-blue;
             color: $light-grayish-blue;
+            transition: background-color .5s;
             cursor: pointer;
+          }
+          &__cta:hover{
+            background-color: hsl(224, 94%, 66%);
           }
         }
       }
     }
     .about-site {
-      padding: 3em;
+      padding: 1em 3em;
       &__illustration-secondary {
         @include set-image;
         padding: 4em 0;
@@ -94,12 +98,16 @@
           z-index: 0;
           width: 10em;
           border-bottom: 1px solid $moderate-cyan;
+          transition: color .5s;
           &--icon {
             content: url(../img/icon-arrow.svg);
             position: absolute;
             top: 25%;
             margin-left: 0.1em;
           }
+        }
+        &__redirect-link:hover{
+          color: hsl(170, 49%, 55%);
         }
       }
       .card-box {
@@ -158,6 +166,7 @@
             border-radius: 0.4em;
             border: none;
             font-family: inherit;
+            transition: background-color .5s;
           }
           &__cta {
             background-color: $bright-blue;
@@ -165,19 +174,23 @@
             margin-top: 0.6em;
             cursor: pointer;
           }
+          &__cta:hover{
+            background-color: hsl(224, 94%, 66%);
+          }
         }
       }
     }
     .footer-container {
       background-color: $very-dark-blue;
       padding: 3em;
-      @include column-flex;
-      padding-top: 4em;
-      gap: 4em;
       &__logo{
         width: 166px;
         height: 49px;
       }
+      .footer-content{
+      @include column-flex;
+      padding-top: 4em;
+      gap: 4em;
       .contact-block {
         @include column-flex;
         &__contact {
@@ -197,8 +210,15 @@
       .about-company-block,
       .policy-box {
         @include column-flex;
+        max-width: 6em;
         &__link {
           color: $white-color;
+          padding: 0 .25em;
+          transition: color .5s;
+          cursor: pointer;
+        }
+        &__link:hover{
+          color: $desaturate-blue;
         }
       }
       .social-media-box {
@@ -207,9 +227,11 @@
           border: 0.1em solid $white-color;
           padding: 0.5em;
           border-radius: 50%;
+          cursor: pointer;
         }
       }
     }
+  }
   }
 }
 @media (min-width: 576px) {
