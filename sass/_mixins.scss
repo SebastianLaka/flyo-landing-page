@@ -9,7 +9,7 @@
   font-weight: $bold-weight;
   text-align: center;
 }
-@mixin center-flex {
+@mixin center-flex-column {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,4 +24,9 @@
   display: flex;
   justify-content: center;
   gap: 1em;
+}
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

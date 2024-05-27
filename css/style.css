@@ -6,6 +6,18 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  line-height: 150%;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media (min-width: 375px) {
@@ -38,6 +50,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 0.5em;
   }
   .main-site .nav .nav-container .nav-links__link {
     padding: 0.5em;
@@ -57,11 +70,9 @@
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
-    line-height: 150%;
   }
   .main-site .header-site .header-content__description {
     text-align: center;
-    line-height: 150%;
     padding: 1em 0;
   }
   .main-site .header-site .header-content .header-interaction__input {
@@ -104,14 +115,12 @@
   }
   .main-site .about-site .site-description__description {
     padding-top: 1.25em;
-    line-height: 150%;
   }
   .main-site .about-site .site-description__redirect-link {
     color: hsl(170, 45%, 43%);
     position: relative;
     display: block;
     margin: 1.25em auto;
-    text-decoration: none;
     padding: 0.25em 0;
     z-index: 0;
     width: 10em;
@@ -137,9 +146,6 @@
   }
   .main-site .about-site .card-box__icon {
     width: 1.5em;
-  }
-  .main-site .about-site .card-box__description {
-    line-height: 150%;
   }
   .main-site .about-site .card-box .person-box {
     display: -webkit-box;
@@ -187,7 +193,6 @@
   }
   .main-site .newsletter-container .newsletter-box .newsletter-area__description {
     padding: 2em 0;
-    line-height: 150%;
   }
   .main-site .newsletter-container .newsletter-box .newsletter-interaction__email-place, .main-site .newsletter-container .newsletter-box .newsletter-interaction__cta {
     width: 100%;
@@ -304,7 +309,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    list-style-type: none;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
   }

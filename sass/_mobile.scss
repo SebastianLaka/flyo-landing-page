@@ -12,15 +12,14 @@
       left: 0;
       right: 0;
       .nav-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-between;
         padding: 0.5em;
         &__logo {
           width: 8em;
         }
         .nav-links {
           display: flex;
+          gap: .5em;
           &__link {
             padding: 0.5em;
             cursor: pointer;
@@ -39,11 +38,9 @@
       .header-content {
         &__heading {
           @include heading-style;
-          line-height: 150%;
         }
         &__description {
           text-align: center;
-          line-height: 150%;
           padding: 1em 0;
         }
         .header-interaction {
@@ -86,14 +83,12 @@
         }
         &__description {
           padding-top: 1.25em;
-          line-height: 150%;
         }
         &__redirect-link {
           color: $moderate-cyan;
           position: relative;
           display: block;
           margin: 1.25em auto;
-          text-decoration: none;
           padding: 0.25em 0;
           z-index: 0;
           width: 10em;
@@ -118,9 +113,6 @@
         &__icon {
           width: 1.5em;
         }
-        &__description {
-          line-height: 150%;
-        }
         .person-box {
           display: flex;
           align-items: center;
@@ -142,7 +134,7 @@
       }
     }
     .newsletter-container {
-      @include center-flex;
+      @include center-flex-column;
       background-color: $desaturate-blue;
       padding: 3em;
       margin-top: 3em;
@@ -155,7 +147,6 @@
           }
           &__description {
             padding: 2em 0;
-            line-height: 150%;
           }
         }
         .newsletter-interaction {
@@ -246,7 +237,6 @@
       .nav-container {
         .nav-links {
           display: flex;
-          list-style-type: none;
           font-family: "Raleway", sans-serif;
           font-weight: $regular-weight;
           &__link {
