@@ -26,10 +26,6 @@ a {
   }
   .main-site .nav {
     padding: 1em 0.5em;
-    position: fixed;
-    width: 100%;
-    left: 0;
-    right: 0;
   }
   .main-site .nav .nav-container {
     display: -webkit-box;
