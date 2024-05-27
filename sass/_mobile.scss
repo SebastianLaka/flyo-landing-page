@@ -52,6 +52,14 @@
             border-radius: 0.2em;
             outline-color: $very-dark-blue;
           }
+          &__error{
+            padding: .25em 0;
+            font-size: .75rem;
+            color: rgb(255, 0, 0);
+          }
+          .change-input-color{
+            border: 1px solid rgb(255, 0, 0);
+          }
           &__cta {
             margin-top: 1em;
             width: 100%;
@@ -168,6 +176,14 @@
           }
           &__cta:hover {
             background-color: hsl(224, 94%, 66%);
+          }
+          &__error{
+            padding: .25em 0;
+            font-size: .75rem;
+            color: rgb(255, 0, 0);
+          }
+          .change-input-color{
+            border: 1px solid rgb(255, 0, 0);
           }
         }
       }

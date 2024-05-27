@@ -83,6 +83,14 @@ a {
     border-radius: 0.2em;
     outline-color: hsl(243, 87%, 12%);
   }
+  .main-site .header-site .header-content .header-interaction__error {
+    padding: 0.25em 0;
+    font-size: 0.75rem;
+    color: rgb(255, 0, 0);
+  }
+  .main-site .header-site .header-content .header-interaction .change-input-color {
+    border: 1px solid rgb(255, 0, 0);
+  }
   .main-site .header-site .header-content .header-interaction__cta {
     margin-top: 1em;
     width: 100%;
@@ -212,6 +220,14 @@ a {
   }
   .main-site .newsletter-container .newsletter-box .newsletter-interaction__cta:hover {
     background-color: hsl(224, 94%, 66%);
+  }
+  .main-site .newsletter-container .newsletter-box .newsletter-interaction__error {
+    padding: 0.25em 0;
+    font-size: 0.75rem;
+    color: rgb(255, 0, 0);
+  }
+  .main-site .newsletter-container .newsletter-box .newsletter-interaction .change-input-color {
+    border: 1px solid rgb(255, 0, 0);
   }
   .main-site .footer-container {
     background-color: hsl(243, 87%, 12%);
