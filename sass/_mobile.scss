@@ -53,9 +53,7 @@
             outline-color: $very-dark-blue;
           }
           &__error{
-            padding: .25em 0;
-            font-size: .75rem;
-            color: rgb(255, 0, 0);
+           @include error-styles;
           }
           .change-input-color{
             border: 1px solid rgb(255, 0, 0);
@@ -178,9 +176,7 @@
             background-color: hsl(224, 94%, 66%);
           }
           &__error{
-            padding: .25em 0;
-            font-size: .75rem;
-            color: rgb(255, 0, 0);
+            @include error-styles;
           }
           .change-input-color{
             border: 1px solid rgb(255, 0, 0);

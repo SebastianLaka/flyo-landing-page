@@ -87,6 +87,7 @@ a {
     padding: 0.25em 0;
     font-size: 0.75rem;
     color: rgb(255, 0, 0);
+    display: none;
   }
   .main-site .header-site .header-content .header-interaction .change-input-color {
     border: 1px solid rgb(255, 0, 0);
@@ -225,6 +226,7 @@ a {
     padding: 0.25em 0;
     font-size: 0.75rem;
     color: rgb(255, 0, 0);
+    display: none;
   }
   .main-site .newsletter-container .newsletter-box .newsletter-interaction .change-input-color {
     border: 1px solid rgb(255, 0, 0);
