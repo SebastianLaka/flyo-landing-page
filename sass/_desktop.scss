@@ -28,12 +28,17 @@
           padding-right: 3.9em;
         }
         .header-interaction {
-          display: flex;
-          gap: 1em;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
           width: 85%;
           &__cta {
             margin-top: 0;
+            margin-left: .5em;
             width: 70%;
+          }
+          &__error{
+            grid-row: 2/3;
           }
         }
       }
@@ -65,13 +70,11 @@
       .newsletter-box {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        align-items: center;
         gap: 8em;
         padding: 3em 0;
         .newsletter-area {
           grid-column: 0/1;
           grid-row: 1/2;
-
           &__description {
             padding: 1em 0 0 0;
           }

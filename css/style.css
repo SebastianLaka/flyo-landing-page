@@ -229,6 +229,7 @@ a {
     font-size: 0.75rem;
     color: rgb(255, 0, 0);
     display: block;
+    color: hsl(0, 0%, 100%);
   }
   .main-site .newsletter-container .newsletter-box .newsletter-interaction .change-input-color {
     border: 1px solid rgb(255, 0, 0);
@@ -397,15 +398,18 @@ a {
     padding-right: 3.9em;
   }
   .main-site .header-site .header-content .header-interaction {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     width: 85%;
   }
   .main-site .header-site .header-content .header-interaction__cta {
     margin-top: 0;
+    margin-left: 0.5em;
     width: 70%;
+  }
+  .main-site .header-site .header-content .header-interaction__error {
+    grid-row: 2/3;
   }
   .main-site .about-site {
     display: grid;
@@ -435,9 +439,6 @@ a {
   .main-site .newsletter-container .newsletter-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     gap: 8em;
     padding: 3em 0;
   }
