@@ -80,10 +80,13 @@ a {
     outline-color: hsl(243, 87%, 12%);
   }
   .main-site .header-site .header-content .header-interaction__error {
+    display: none;
+  }
+  .main-site .header-site .header-content .header-interaction .show-error {
     padding: 0.25em 0;
     font-size: 0.75rem;
     color: rgb(255, 0, 0);
-    display: none;
+    display: block;
   }
   .main-site .header-site .header-content .header-interaction .change-input-color {
     border: 1px solid rgb(255, 0, 0);
@@ -219,10 +222,13 @@ a {
     background-color: hsl(224, 94%, 66%);
   }
   .main-site .newsletter-container .newsletter-box .newsletter-interaction__error {
+    display: none;
+  }
+  .main-site .newsletter-container .newsletter-box .newsletter-interaction .show-error {
     padding: 0.25em 0;
     font-size: 0.75rem;
     color: rgb(255, 0, 0);
-    display: none;
+    display: block;
   }
   .main-site .newsletter-container .newsletter-box .newsletter-interaction .change-input-color {
     border: 1px solid rgb(255, 0, 0);
