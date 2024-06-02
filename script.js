@@ -10,16 +10,24 @@ const launchError = (input, error) =>{
     input.classList.toggle('show-error');
     error.classList.toggle('change-input-color');
 }
+const regexpCheck = (emailPlace) =>{
+    if(!regex.test(emailPlace.value)){
+        const launchError = (input, error) =>{
+            input.classList.toggle('show-error');
+            error.classList.toggle('change-input-color');
+        }
+        return launchError;
+    }
+}
 headerCTA.addEventListener('click', e =>{
     e.preventDefault();
-    if(!regex.test(inputHeader.value)){
-
+    if(regexpCheck(inputHeader)){
         launchError(errorHeader, inputHeader) 
     }
 })
-newsLetterCTA.addEventListener('click', e=>{
+newsLetterCTA.addEventListener('click', e =>{
     e.preventDefault();
-    if(!regex.test(inputNewsletter.value)){
+    if(regexpCheck(inputNewsletter)){
         launchError(errorNewsletter, inputNewsletter) 
     }
 })
