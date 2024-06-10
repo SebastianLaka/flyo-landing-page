@@ -1,11 +1,10 @@
 "use strict";
-const headerCTA = document.querySelector('.header-interaction__cta')
-const newsLetterCTA = document.querySelector('.newsletter-interaction__cta')
-const inputHeader = document.querySelector('.header-interaction__input')
-const inputNewsletter = document.querySelector('.newsletter-interaction__email-place')
-const errorHeader = document.querySelector(".header-interaction__error")
-const errorNewsletter = document.querySelector(".newsletter-interaction__error")
-
+const headerCTA = document.querySelector('.header-interaction__cta');
+const newsLetterCTA = document.querySelector('.newsletter-interaction__cta');
+const inputHeader = document.querySelector('.header-interaction__input');
+const inputNewsletter = document.querySelector('.newsletter-interaction__email-place');
+const errorHeader = document.querySelector(".header-interaction__error");
+const errorNewsletter = document.querySelector(".newsletter-interaction__error");
 const regexEmail = /\S+@\S+\.\S+/
 const addError = (error, input) =>{
     error.classList.add('show-error');
@@ -17,17 +16,17 @@ const removeError = (error, input) =>{
 }
 const checkHeaderValidation = () =>{
     if(!regexEmail.test(inputHeader.value)){
-        addError(errorHeader, inputHeader)
+        addError(errorHeader, inputHeader);
     }else if(regexEmail.test(inputHeader.value)){
-        removeError(errorHeader, inputHeader)
+        removeError(errorHeader, inputHeader);
     }
 }
 const checkNewsletterValidation = () =>{
     if(!regexEmail.test(inputNewsletter.value)){
-        addError(errorNewsletter, inputNewsletter)
+        addError(errorNewsletter, inputNewsletter);
     }else if(regexEmail.test(inputNewsletter.value)){
-        removeError(errorNewsletter, inputNewsletter)
+        removeError(errorNewsletter, inputNewsletter);
     }
 }
-headerCTA.addEventListener('click', checkHeaderValidation)
-newsLetterCTA.addEventListener('click', checkNewsletterValidation)
+headerCTA.addEventListener('click', checkHeaderValidation);
+newsLetterCTA.addEventListener('click', checkNewsletterValidation);
