@@ -5,6 +5,7 @@ const inputHeader = document.querySelector('.header-interaction__input')
 const inputNewsletter = document.querySelector('.newsletter-interaction__email-place')
 const errorHeader = document.querySelector(".header-interaction__error")
 const errorNewsletter = document.querySelector(".newsletter-interaction__error")
+
 const regexEmail = /\S+@\S+\.\S+/
 const addError = (error, input) =>{
     error.classList.add('show-error');

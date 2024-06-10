@@ -55,7 +55,7 @@
             @include error-styles;
           }
           .change-input-color{
-            border: 1px solid rgb(255, 0, 0);
+            border: 1px solid $input-error-color;
           }
           &__cta {
             margin-top: 0.6em;
@@ -71,7 +71,7 @@
             cursor: pointer;
           }
           &__cta:hover {
-            background-color: hsl(224, 94%, 66%);
+            background-color: $cta-hover-color;
           }
         }
       }
@@ -108,7 +108,7 @@
           }
         }
         &__redirect-link:hover {
-          color: hsl(170, 49%, 55%);
+          color: $cyan-hover;
         }
       }
       .card-box {
@@ -172,7 +172,7 @@
             cursor: pointer;
           }
           &__cta:hover {
-            background-color: hsl(224, 94%, 66%);
+            background-color: $cta-hover-color;
           }
           &__error{
             display: none;
@@ -182,7 +182,7 @@
             color: $white-color
           }
           .change-input-color{
-            border: 1px solid rgb(255, 0, 0);
+            border: 1px solid $input-error-color;
           }
         }
       }
